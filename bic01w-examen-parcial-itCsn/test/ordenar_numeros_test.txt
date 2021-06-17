@@ -1,0 +1,4 @@
+Valores ingresados:
+*) 30
+*) 200
+*) 1000

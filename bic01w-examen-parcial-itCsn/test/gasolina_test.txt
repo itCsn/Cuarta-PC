@@ -1,0 +1,4 @@
+En el tramo 1, el consumo de gasolina fue 22.42 millas por galon.
+En el tramo 2, el consumo de gasolina fue 19.42 millas por galon.
+En el tramo 3, el consumo de gasolina fue 24.0 millas por galon.
+En 3 tramos, el consumo de gasolina fue 21.6 millas por galon.

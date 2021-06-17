@@ -1,0 +1,5 @@
+Valores ingresados:
+*) BIC01
+*) FIIS
+*) UNI
+*) W

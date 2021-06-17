@@ -1,0 +1,2 @@
+El numero ingresado no es valido.
+El equivalente en decimal es 13
