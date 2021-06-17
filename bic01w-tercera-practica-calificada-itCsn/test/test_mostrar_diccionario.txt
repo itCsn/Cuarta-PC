@@ -1,0 +1,11 @@
+DICCIONARIO DE SINONIMOS (3 entradas)
+
+BUCLE:         rizo
+               rulo
+               onda
+CONDICION:     contexto
+               entorno
+               ambiente
+VALOR:         cualidad
+               virtud
+               capacidad

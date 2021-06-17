@@ -1,0 +1,4 @@
+TEMPERATURA PROMEDIO POR DIA
+Lunes:         70.0
+Martes:        56.67
+Miercoles:     79.33
