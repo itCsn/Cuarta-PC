@@ -34,12 +34,7 @@ def palabra_completada(palabra_secreta, letras_seleccionadas):
     # Ingrese la solucion en las lineas subsiguientes.
     # INICIO
     
-    for i in letras_seleccionadas:
-        for j in palabra_secreta:
-            if i == j:
-                return True
-            else:
-                return False
+  
     # FIN
     return
 
@@ -55,16 +50,7 @@ def obtener_solucion_como_cadena(palabra_secreta, letras_seleccionadas):
     """
     # Ingrese la solucion en las lineas subsiguientes.
     # INICIO
-    lista = []    
-    lista[:0] = palabra_secreta
-
-    for letra in lista:
-        if  not letra in letras_seleccionadas:
-            i = lista.index(letra)
-            lista[i] = "_ "
-            stgr = "".join(lista) 
-    return stgr
-
+ 
     # FIN
     #return
 
@@ -78,16 +64,7 @@ def obtener_letras_disponibles(letras_seleccionadas):
     # Ingrese la solucion en las lineas subsiguientes.
     # INICIO
     
-    letras_disponibles = "abcdefghjklmnñopqrstuvxyz"
-    letras_disponibles_lista = []
-    letras_disponibles_lista[:0] = letras_disponibles
-
-    for letra in letras_seleccionadas:
-        if letra in letras_disponibles_lista:
-            i = letras_disponibles_lista.index(letra)
-            del(letras_disponibles_lista[i])
-            stgr = "".join(letras_disponibles_lista)
-    return stgr
+    
 
     # FIN
     #return
@@ -114,74 +91,7 @@ def iniciar(palabra_secreta):
     # Ingrese la solucion en las lineas subsiguientes.
     # INICIO
     
-    letras_disponibles = "abcdefghjklmnñopqrstuvxyz"
-    letras_disponibles_mayusculas = "ABCDEFGHIJKLMNÑOPQRSTUVXYZ"
-    numero_de_letras = len(palabra_secreta)
-    numero_de_espacios = "_ "*numero_de_letras
-    oportunidades = 6
-    letras_seleccionadas = []
-    palabra = []
-    advertencias = 3
-
-    print("Este es el juego del ahorcado!")
-    print(f"Adivina el pais. Tiene {numero_de_letras} letras")
-    print("_ "*numero_de_letras)
-    print("Te quedan 6 oportunidades.")
-    print(f"Letras disponibles: {letras_disponibles}")
-    #letras_seleccionadas = input("Ingresa una letra: ")
-   
-    while not palabra_completada(palabra_secreta,letras_seleccionadas) and oportunidades > 0:
-        letra = input("Ingresa una letra: ")
-
-        if len(letra) == 1 and letra.isakpha():
-            if letra in letras_seleccionadas:
-                advertencias -= 1
-                print(f"Error! Ya has ingresado esa letra. Te quedan {advertencias} advertencias: {obtener_solucion_como_cadena(palabra_secreta,letras_seleccionadas)}")
-                letra = ("Ingresa una letra: ") 
-            elif letra not in palabra:
-                oportunidades -= 1
-                letras_seleccionadas.append(letra)
-                palabra_lista = list(numero_de_espacios)
-                print(f"Error! Esa letra no esta en la palabra: {obtener_solucion_como_cadena(palabra_secreta,letras_seleccionadas)}")
-                print(f"Te quedan {oportunidades} oportunidades.")
-                letra = input("Ingresa una letra: ")
-
-            else:
-                letra = input(f"Exito!: {obtener_solucion_como_cadena(palabra_secreta,letras_seleccionadas)}")
-
-        
-        #for letras in palabra_secreta:
-        #    if letra in  adivinar:
-        #        obtener_solucion_como_cadena(palabra_secreta,adivinar)
-        #    else:
-        #        print(" ", end=" ")
-        #print("_ ", end=" ")
-        #print(f"Te quedan {oportunidades} oportunidades")
-        #posibles_letras = input("Ingresa una letra: ")
-        #adivinar.append(posibles_letras.lower())
-        #print(obtener_letras_disponibles(adivinar))
-#
-#        if posibles_letras.lower() not in palabra_secreta.lower():
-#            oportunidades -= 1
-#
-#            if oportunidades == 0:
-#                break
-#
-#    if palabra_completada == True:
-#        print("Felicitaciones, ganaste!")
-#    else:
-#        print(f"Lo siento, te quedaste sin oportunidades. El pais era {palabra_secreta}")
-#    #while palabra_completada(palabra_secreta,letras_seleccionadas) == False:
-    #    
-    #    if letras_seleccionadas in letras_disponibles or letras_seleccionadas in letras_disponibles_mayusculas:
-    #        
-    #        #obtener_letras_disponibles(letras_seleccionadas)
-    #        print(f"Éxito: {obtener_solucion_como_cadena(palabra_secreta, letras_seleccionadas)}")
-    #        print(f"Te quedan {oportunidades} oportunidades.")
-    #        print(obtener_letras_disponibles(letras_seleccionadas))
-    #        letras_seleccionadas = input("Ingrese una letra: ")
-
-
+ 
 
     # FIN
     #return
