@@ -1,41 +1,22 @@
 class CuentaBancaria(object):
 
     def __init__(self, numero_cuenta, tasa_interes, costo_retiro):
-        self.numero_cuenta = numero_cuenta
-        self.tasa_interes = tasa_interes
-        self.saldo = 0 
-        self.costo_retiro = costo_retiro
-        self.monto = 0
-        self.intereses = 0
-
+        
     def calcular_interes(self):
-        tasa_interes =self.tasa_interes
-        interes = float(self.saldo * self.tasa_interes/100)
-        self.intereses = interes
-        return self.intereses
-
+        return 
+    
     def depositar(self, monto):
-        self.monto = monto
-        self.saldo += self.monto
-        return self.saldo
+        return 
 
     def retirar(self, monto):
          
-        self.monto = monto
-        self.saldo -= (self.monto + self.costo_retiro)
-        saldo_inicial = self.saldo + self.monto + self.costo_retiro
-        if self.saldo < 0:
-            raise ValueError(f"El saldo actual es {saldo_inicial} PEN. No es posible retirar {monto} PEN con un costo de {self.costo_retiro} PEN.") 
-        else:
-            return self.saldo
+        return 
 
     def pagar_interes(self):
-        tasa_interes = self.tasa_interes
-        interes = self.saldo * (1 + tasa_interes / 100 )
-        return  interes
+        return  
 
     def __str__(self):
-        return f"Cuenta: {self.numero_cuenta} Saldo: {float(self.saldo)} PEN Tasa de interes: {self.tasa_interes}% Costo por retiro: {self.costo_retiro} PEN." 
+        return 
 
 
 
